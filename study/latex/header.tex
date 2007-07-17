@@ -1,0 +1,24 @@
+\documentclass[12pt, a4paper, oneside, titlepage]{scrreprt}
+\usepackage{ngerman, ifpdf}
+% Eingabe von Umlauten ermöglichen
+\usepackage[latin1]{inputenc}
+\usepackage[scaled]{helvet}
+\usepackage[T1]{fontenc}
+\renewcommand{\rmdefault}{ua1}  
+
+%% todo: Font-size 12pt kontrollieren, Font-Family auf Arial bzw. Helvetica umstellen
+%% todo: A4 Seitenränder gemäss den Angaben der PHW formatieren [oben & unten (2-2.5cm), links (min.3cm), rechts (1.5cm)]
+
+% falls ein PDF erstellt wird, werden die nachfolgenden informationen
+% wie Titel, Autoren, etc. in das PDF eingetragen.
+\ifpdf
+   \usepackage[pdftex]{graphicx}
+   \pdfinfo {
+      /Title (Nachhaltige Mitarbeiterbindung durch Anreizsysteme)
+      /Subject (Masterstudy)
+      /Author (Marcel Weber & Silvio Wangler)
+      /Keywords (Masterstudy PHW)
+   }
+\else
+   \usepackage{graphicx}
+\fi
