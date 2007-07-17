@@ -2,8 +2,9 @@
 .\main.tex
 
 [texfiles]
-.\chap01-Einleitung.tex
-.\chap02-Theorie.tex
+.\chap02-Einleitung.tex
+.\chap03-Theorie.tex
 .\header.tex
 .\titlepage.tex
+.\chap01-ManagementSummary.tex
 
