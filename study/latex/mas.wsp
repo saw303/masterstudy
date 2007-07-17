@@ -2,9 +2,13 @@
 .\main.tex
 
 [texfiles]
-.\chap02-Einleitung.tex
-.\chap03-Theorie.tex
 .\header.tex
 .\titlepage.tex
 .\chap01-ManagementSummary.tex
+.\chap02-Einleitung.tex
+.\chap03-Theorie.tex
+.\chap04-Methodologie.tex
+.\chap05-Ergebnisse-Resultate.tex
+.\chap06-Konklusion.tex
+.\chap07-Literaturverzeichnis.tex
 
