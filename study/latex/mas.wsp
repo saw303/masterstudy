@@ -1,0 +1,7 @@
+[main]
+.\main.tex
+
+[texfiles]
+.\chap01-Einleitung.tex
+.\chap02-Theorie.tex
+
