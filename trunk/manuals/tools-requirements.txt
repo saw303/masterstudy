@@ -1,0 +1,11 @@
+Diese Arbeit wurde mit folgenden Applikationen entworfen.
+
+[LaTeX Werkzeuge]
+
++ MikeTeX 2.6 		- http://www.miktex.org/
++ WinShell 3.2 		- http://www.winshell.org/
+
+[Online Umfrage]
+
++ LimeSurvey 1.49 RC3	- http://www.limesurvey.org/
++ MySQL 5.0		- http://www.mysql.com/
