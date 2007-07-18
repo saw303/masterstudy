@@ -1,3 +1,7 @@
+% Infos zu dieser Header Datei findet man bspw. unter den nachfolgenden Links
+%
+% http://www.yauh.de/latex/ha_praeam.html
+
 \documentclass[12pt, a4paper, oneside, titlepage]{scrreprt}
 % Deutschsprachiges Paket und PDF Paket laden
 \usepackage[ngerman]{babel}
@@ -11,12 +15,16 @@
 \usepackage[T1]{fontenc}
 \renewcommand{\rmdefault}{ua1}  
 
-%% todo: A4 Seitenränder gemäss den Angaben der PHW formatieren [oben & unten (2-2.5cm), links (min. 3cm), rechts (1.5cm)]
+% A4 Seitenränder gemäss den Angaben der PHW formatieren [oben & unten (2-2.5cm), links (min. 3cm), rechts (1.5cm)]
+\usepackage[paper=a4paper,left=35mm,right=15mm,top=25mm,bottom=25mm]{geometry}
 
 % falls ein PDF erstellt wird, werden die nachfolgenden informationen
 % wie Titel, Autoren, etc. in das PDF eingetragen.
 \ifpdf
    \usepackage[pdftex]{graphicx}
+   %% todo: [siwa] pdf generierung erweitern und testen, so dass sowohl TOC als auch PDF Bookmarks vorhanden sind.
+   % Fügt Bookmarks hinzu, jedoch verschwindet der Inhalt des Inhaltsverzeichnisses
+   %\usepackage{hyperref}
    \pdfinfo {
       /Title (Nachhaltige Mitarbeiterbindung durch Anreizsysteme)
       /Subject (Masterstudy)
