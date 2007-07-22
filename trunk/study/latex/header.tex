@@ -2,7 +2,15 @@
 %
 % http://www.yauh.de/latex/ha_praeam.html
 
-\documentclass[12pt, a4paper, oneside, titlepage]{scrreprt}
+\documentclass[12pt,% Schriftgrösse 12pt
+				a4paper, % A4 Papier
+				oneside, % Einseitig
+				titlepage, % mit Titelseite
+				headsepline,%         Linie nach Kopfzeile
+				footsepline,%         Linie vor Fusszeile
+				halfparskip,%        Europäischer Satz mit abstand zwischen Absätzen
+				bibtotocnumbered%    Literaturverzeichnis nummeriert einfügen
+]{scrreprt}
 % Deutschsprachiges Paket und PDF Paket laden
 \usepackage[ngerman]{babel}
 \usepackage{ifpdf}
@@ -27,19 +35,36 @@
 % Zeilenabstand auf 1,5 Zeilen setzen
 \onehalfspacing
 
+% Paket für Tabellen
+\usepackage{array}
+
 % falls ein PDF erstellt wird, werden die nachfolgenden informationen
 % wie Titel, Autoren, etc. in das PDF eingetragen.
 \ifpdf
    \usepackage[pdftex]{graphicx}
    %% todo: [siwa] pdf generierung erweitern und testen, so dass sowohl TOC als auch PDF Bookmarks vorhanden sind.
    % Fügt Bookmarks hinzu, jedoch verschwindet der Inhalt des Inhaltsverzeichnisses
-   %\usepackage{hyperref}
-   \pdfinfo {
+	\usepackage{color}
+	\definecolor{LinkColor}{rgb}{0,0,0.5}
+	\usepackage{hyperref}
+	\hypersetup{colorlinks=true,%
+		linkcolor=LinkColor,%
+		citecolor=LinkColor,%
+		filecolor=LinkColor,%
+		menucolor=LinkColor,%
+		pagecolor=LinkColor,%
+		urlcolor=LinkColor}
+		
+	\pdfinfo {
       /Title (Nachhaltige Mitarbeiterbindung durch Anreizsysteme)
       /Subject (Masterstudy)
       /Author (Marcel Weber & Silvio Wangler)
       /Keywords (Masterstudy PHW)
-   }
+	}
+      
+	
+	
+   
 \else
 % ansonsten grafik paket laden
    \usepackage{graphicx}
