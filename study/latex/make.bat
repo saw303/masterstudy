@@ -1,8 +1,8 @@
 @ECHO OFF
 rem Batchdatei zur Erstellung meiner Diplomarbeit mit Glossar,
 rem Inhaltsverzeichnis usw..
-rem Alle Zwischendateien bleiben erhalten, so dass Zwischenlaeufe in
-rem TeXnicCenter nicht mehr notwendig sind.
+
+del *.log
 
 rem LaTeX Vorlauf
 latex main.tex
