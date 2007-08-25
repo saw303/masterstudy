@@ -24,6 +24,7 @@ latex main.tex
 rem PDF-Dokument erzeugen
 pdflatex main.tex
 pdflatex main.tex
+pdflatex main.tex
 del Mitarbeiterbindung_mit_Anreizsystemen.pdf
 move main.pdf Mitarbeiterbindung_mit_Anreizsystemen.pdf
 pause
