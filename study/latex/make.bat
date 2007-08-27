@@ -3,6 +3,7 @@ rem Batchdatei zur Erstellung meiner Diplomarbeit mit Glossar,
 rem Inhaltsverzeichnis usw..
 
 del *.log
+del *.pdf
 
 rem LaTeX Vorlauf
 latex main.tex
