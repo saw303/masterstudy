@@ -16,3 +16,5 @@ Freundliche Grüsse
 
 Marcel Weber und Silvio Wangler
 Studierende der PHW Zürich
+
+Diese Arbeit wird durch Prof. Heinz A. Stieger, Dozent an der PHW Zürich (http://www.phw.info/) betreut.
