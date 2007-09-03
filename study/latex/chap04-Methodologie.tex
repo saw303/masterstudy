@@ -4,25 +4,38 @@
 % 
 \chapter{Methodologie}
 %% todo: Methodologie schreiben. (Richtlinie 20 Seiten)
-% Im Abschnit Methodologie beschreiben Sie detailliert, wie Sie die praktische / empirische Analyse des Phänomens durchgeführt
-% haben, welches Design (Typ der Arbeit) Sie weshalb gewählt, welche qualitativen oder quantitativen Methoden Sie wie eingesetzt
-% und wie Sie die gemachten Erkenntnisse gewonnen und daraus Handlungsempfehlungen abgeleitet haben.
-%
+% Im Abschnitt Methodologie beschreiben Sie detailliert, wie Sie die praktische / empirische Analyse des Phänomens durchgeführt haben, welches Design (Typ der Arbeit) Sie weshalb gewählt, welche qualitativen oder quantitativen Methoden Sie wie eingesetzt und wie Sie die gemachten Erkenntnisse gewonnen und daraus Handlungsempfehlungen abgeleitet haben.
 % Tipp: Stützen Sie sich bei der Wahl und Anwendung von Methoden auf die entsprechende Literatur.
 
+Dieses Kapitel soll die Strategie dieser Arbeit beziehungsweise der Datenerhebung aufzeigen. Es dient mitunter der Nachvollziehbarkeit und ist daher eines der beiden Hauptbestandteile dieser Masterthesis. Hier behandeln wir unter anderem die folgenden Punkte.
 
+\begin{itemize}
+	\item Art der Arbeit
+	\item Strategie Umfrage <<Unternehmen>>
+	\item Strategie Umfrage <<Mitarbeiter>>
+	\item Gründe für die in der Umfrage einbezogene Anreize
+	\item Gründe für die in der Umfrage ausgeschlossenen Anreize
+\end{itemize}
 
-Die Datenerhebung erfolgt quantitativ (konfirmatorisch) und verfolgt ein nicht experimentelles Erhebungsdesgin in Form zweier Fragebogen (im weiteren Survey genannt). Diese stehen für die Probanden dieser Masterarbeit online zur Verfügung.
+Die Datenerhebung erfolgt quantitativ (konfirmatorisch) und verfolgt ein nicht experimentelles Erhebungsdesgin in Form zweier Fragebogen (im weiteren Survey genannt). Diese stehen für die Probanden\index{Probanden} dieser Masterarbeit online zur Verfügung. Die Surveys werden mit der freien Software LimeSurvey\index{LimeSurvey}\footnote{http://www.limesurvey.org/} erstellt, unter der Homepage von Silvio Wangler\footnote{http://www.silviowangler.ch/} publiziert und ausgewertet.
 
-\paragraph{}Im Rahmen dieser Masterarbeit wollen wir sowohl von Arbeitgeber als auch von Arbeitnehmer eine Datenerhebung durchführen. Die so gewonnen Daten sollen uns für einen Ansichtenvergleich der beiden Parteien dienen, mit welchen wir unsere Hypothesen bestätigen bzw. verwerfen wollen. Der Vergleich zwischen Arbeitnehmer und Arbeitgeber wollen wir über die Parameter Unternehmensgrösse und Firmensitz herstellen. D.h. dass alle Probanden die beiden Informationen in dem jeweiligen Survey angeben müssen.
+\paragraph{}Im Rahmen dieser Masterarbeit wollen wir sowohl mit den Arbeitgebern als auch mit den Arbeitnehmern eine Datenerhebung durchführen. Die so gewonnen Daten sollen uns für einen Ansichtenvergleich der beiden Parteien dienen, mit welchen wir unsere Hypothesen bestätigen bzw. verwerfen wollen. Der Vergleich zwischen Arbeitnehmer und Arbeitgeber wollen wir über die Parameter Unternehmensgrösse und Firmensitz (Domizilland) und Wirtschaftssektor herstellen. Das heisst dass alle Probanden\index{Probanden} diese Parameter in dem jeweiligen Survey zwingend angeben müssen.
 
-\paragraph{}Um zu gewährleisten, dass die beiden Surveys repräsentativ ausfallen, werden die Teilnehmer nach folgenden Kriterien kategorisiert.
-
+\paragraph{}
+%% todo: [siwa] Text wie die beiden Surveys grundsätzlich aufgebaut werden --> Geschlossene Fragen, Ablauf, erwarteter Rücklauf usw.
 
 \section{Umfrage bei den Arbeitgebern}
 Wie einleitend bereits erwähnt wollen wir von den Arbeitgebern, das heisst von den Unternehmen wissen, welche immateriellen Anreize sie anwenden bzw. welche bewusst oder unbewusst vermieden werden. In vorherigen Kapitel wurden diverse Varianten von immateriellen Anreizen erwähnt und erklärt. In diesem Abschnitt sollen einige davon nun Platz in der Umfrage für Arbeitgeber finden. Andere Varianten werden begründet aus der Umfrage ausgeschlossen.
 
+Um das Unternehmen fassbar zu machen haben wir es anhand einer Mindmap in verschiedene Attribute unterteilt. Diese Attribute werden wir auch grösstenteils beim Mitarbeiter wiederfinden, um die Gegenüberstellung der Daten zu vereinfachen. Die Entität <<Unternehmen>> haben wir wie in Abbildung \ref{fig:surveyCompany} modelliert und besteht aus den folgenden Attributen.
 
+\begin{itemize}
+	\item Anzahl Beschäftigte
+	\item Firmensitz
+	\item Firmenbestehen / Alter des Unternehmens
+	\item Wirtschaftssektor
+	\item Angewandte Anreizsysteme
+\end{itemize}
 
 \begin{figure}[h]
 	\centering
@@ -33,12 +46,48 @@ Wie einleitend bereits erwähnt wollen wir von den Arbeitgebern, das heisst von d
 		\includegraphics[width=0.8\textwidth]{chap04-MindMap-Survey-Arbeitgeber.eps}
 	\fi
 		
-	\caption[Mindmap Survey Arbeitgeber]{Mindmap Survey Arbeitgeber (Eigene Darstellung)}	
+	\caption[Mindmap Survey Arbeitgeber]{Mindmap Survey Arbeitgeber (eigene Darstellung)}	
 	\label{fig:surveyCompany}
 \end{figure}
 
+Die \textit{Anzahl der Beschäftigten}\index{Anzahl der Beschäftigten} verwenden wir um die Grösse der Firma zu bestimmen. Wie bereits erwähnt dient diese Kennzahl zum direkten Vergleich zwischen einem Unternehmen und einem Mitarbeiter, welcher in einem Unternehmen beschäftigt ist. Es ist uns bewusst, dass es zur Bestimmung der Firmengrösse\index{Firmengrösse} beziehungsweise der <<Firmenkategorie>>\index{Firmenkategorie}, darunter verstehen wir \textit{KMUs}\index{KMU}, grosse Unternehmen und Konzerne\index{Konzerne}, auch mittels Umsatzzahlen\index{Umsatzzahlen} und dergleichen festlegen könnten. Da wir diese Angabe in der Mitarbeiterumfrage jedoch schlecht ermitteln können, da wir diese Kennzahlen dem Mitarbeiterwissen das heisst dem Wissen des Befragten nicht voraussetzen können, wollen wir auf die Verwendung dieser Methode verzichten. Die Bestimmung der Firmengrösse nach Anzahl beschäftigen Mitarbeitern kann aus der Tabelle \ref{tbl:Firmengrösse} entnommen werden.
+
+\begin{table}
+	\centering
+	\begin{tabular}{l|r}
+		\hline
+		< 10 Mitarbeiter & Kleinstunternehmen \\
+		\hline
+		< 50 Mitarbeiter & Kleines Unternehmen \\
+		\hline
+		< 250 Mitarbeiter & Mittleres Unternehmen \\
+		\hline
+		< 2'000 Mitarbeiter & Grosses Unternehmen \\
+		\hline
+		>= 2'000 Mitarbeiter & Konzern \\
+		\hline
+	\end{tabular}
+	\caption[Ermittlung der Firmengrösse]{Ermittlung der Firmengrösse}
+	\label{tbl:Firmengrösse}
+\end{table}
+
+Den \textit{Firmensitz}\index{Firmensitz} wird zur geographischen Bestimmung verwendet. Auch dieser ist im direkten Vergleich mit der Datenerhebung der Mitarbeiter relevant. Das \textit{Firmenalter}\index{Firmenalter} ist eine Kennzahl, welche im Zusammenhang mit der Erfahrung im Personalwesen\index{Personalwesen} verwendet wird. Dabei wird eine hypothetische Annahme getroffen, dass Unternehmen mit einem längerem Bestehen höchstwahrscheinlich auch eine grössere Erfahrung im Personalwesen erarbeitet haben, als dies jüngere Unternehmen ausweisen können. Dabei wird bewusst der Einflussfaktor der verantwortlichen Personen im Personalwesen vernachlässigt, welche sich allenfalls bereits zu früheren Zeiten in anderen Unternehmen gute und relevante Erfahrungswerte bezüglich dem Personalwesen\index{Personalwesen} und insbesondere bezüglich der Mitarbeiterbindung angeeignet haben. Der Parameter \textit{Wirtschaftssektor}\index{Wirtschaftssektor}, unterteilt in die drei aus der Volkswirtschaftslehre bekannten Sektoren Landwirtschafts-, Industrie- und Dienstleistungssektor\index{Dienstleistungssektor}, wird ebenfalls zum direkten Vergleich mit der Datenerhebung bei den Mitarbeiter verwendet. Hier kommt eine weitere hypothetische Annahme zum Einsatz, welche besagt, dass Unternehmen je Wirtschaftssektor ihre Mitarbeiter mit anderen Anreizen binden wollen beziehungsweise können. Als letztes aber unter anderem für die Arbeit wichtigstes Attribut werden die \textit{Anreize} einbezogen, welche Firmen zur Mitarbeiterbindung\index{Mitarbeiterbindung} zur Verfügung stehen. Dabei werden die besagten Anreize in materielle und immaterielle Anreize unterteilt, um bestehende Hypothesen dieser Arbeit zu bekräftigen beziehungsweise zu entkräften. Aus den erhobenen Daten der Umfrage soll ersichtlich sein, auf welche der Anreize Unternehmen ansprechen beziehungsweise von welchen Anreizen Unternehmen zurückscheuen. Das heisst das die vorgegebenen Anreize von Unternehmen klar bewertet werden können.
+
+Die Zielpersonen für die Umfrage bei Unternehmen sind Personalverantwortliche\index{Personalverantwortliche}, Abteilungsleiter\index{Abteilungsleiter} und Geschäftsleitungsmitglieder\index{Geschäftsleitungsmitglied} von Unternehmen. Da die Autoren dieser Masterthesis\index{Masterthesis} beide im Dienstleistungsektor arbeiten und Kundenkontakte\index{Kundenkontakte} bis in die Geschäftsleitungsebene von Kunden\index{Kunden} pflegen, wollen wir in erster Linie diese Personen über unsere direkten Beziehungen\index{Beziehungen} erreichen. Um der Anforderung beziehungsweise dem Versprechen dieser Arbeit, Unternehmen aus dem deutschsprachigen Raum der Europäischen Union zu befragen, gerecht zu werden, verwenden wir sekundär die Business Networking Plattform XING\index{XING}\footnote{http://www.xing.com/}. Über diese Plattform, welche hauptsächlich zum knüpfen von Geschäftsbeziehungen dient, erhoffen wir uns weitere Probanden\index{Probanden} für unsere Umfrage einbeziehen zu können.
+
 \section{Umfrage bei den Arbeitnehmern}
-Hier kommt der Text zu den Arbeitnehmern.
+Die Mitarbeiter bilden die zweite Sicht in unserer Arbeit. Wir sind davon überzeugt, dass im Bezug auf Mitarbeiterbindung beiden Sichten eine wichtige Rolle spielen und eine dieser Sichten zu ignorieren wäre ein Fehler. Dies lassen wir als eine weitere Hypothese dieser Arbeit stehen, welche nachfolgend nicht weiter untersucht wird.
+
+Analog zum Arbeitgeber wollen wir auch den Mitarbeiter in einem Modell darstellen, um diese Entität besser fassen zu können und um Schnittpunkte im Bezug zum Arbeitgeber aufzeigen zu können. In der Abbildung \ref{fig:surveyEmployee} findet man die Illustration zu unserem Modell <<Mitarbeiter>>. Das Modell in Form einer Mindmap besteht aus folgenden Attributen.
+
+\begin{itemize}
+	\item Alter
+	\item Zivilstand
+	\item Land (Domizilland)
+	\item Wirtschaftssektor
+	\item Bewusste und unbewusste Anreize
+\end{itemize}
+
 \begin{figure}[h]
 	\centering
 		
@@ -48,6 +97,13 @@ Hier kommt der Text zu den Arbeitnehmern.
 		\includegraphics[width=0.8\textwidth]{chap04-MindMap-Survey-Arbeitnehmer.eps}
 	\fi
 		
-	\caption[Mindmap Survey Arbeitnehmer]{Mindmap Survey Arbeitnehmer (Eigene Darstellung)}	
+	\caption[Mindmap Survey Arbeitnehmer]{Mindmap Survey Arbeitnehmer (eigene Darstellung)}	
 	\label{fig:surveyEmployee}
 \end{figure}
+
+
+
+\section{In der Umfrage verwendete Anreize}
+Argumente weswegen bestimmte Anreize in der Umfrage eingegliedert wurden.
+\section{Ausgeschlossene Anreize}
+Argumente weswegen bestimmte Anreize in der Umfrage ausgegliedert wurden.

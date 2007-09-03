@@ -4,6 +4,7 @@
 [texfiles]
 .\header.tex
 .\titlepage.tex
+.\chap00-Danksagung.tex
 .\chap01-ManagementSummary.tex
 .\chap02-Einleitung.tex
 .\chap03-Theorie.tex
