@@ -1,0 +1,110 @@
+%
+% Masterarbeit von Marcel Weber und Silvio Wangler
+% 
+% 
+% Infos zu dieser Header Datei findet man bspw. unter den nachfolgenden Links
+%
+% http://www.yauh.de/latex/ha_praeam.html
+
+\documentclass[12pt,% Schriftgrösse 12pt
+				a4paper, % A4 Papier
+				oneside, % Einseitig
+				titlepage, % mit Titelseite
+				headsepline,%         Linie nach Kopfzeile
+				footsepline,%         Linie vor Fusszeile
+				halfparskip,%        Europäischer Satz mit abstand zwischen Absätzen
+				idxtotoc,%            Index ins Verzeichnis einfügen
+				bibtotocnumbered%    Literaturverzeichnis nummeriert einfügen
+]{scrreprt}
+%
+% Deutschsprachiges Paket und PDF Paket laden
+%
+\usepackage[ngerman]{babel}
+\usepackage{ifpdf}
+
+% Das Package unterdrückt den Fehler bei zu vielen "ungehandelten" Floats
+\usepackage{morefloats}
+
+%
+% Paket für die Indexerstellung.
+%
+\usepackage{makeidx}
+
+%
+% Eingabe von Umlauten ermöglichen
+%
+\usepackage[latin1]{inputenc}
+
+%
+% Helvetica Font verwenden (Steuert die Überschriften)
+%
+\usepackage[scaled]{helvet}
+%
+% Helvetica Font für die übrigen Schriften verwenden
+%
+\usepackage[T1]{fontenc}
+\renewcommand{\rmdefault}{ua1}  
+
+%
+% A4 Seitenränder gemäss den Angaben der PHW formatieren [oben & unten (2-2.5cm), links (min. 3cm), rechts (1.5cm)]
+%
+\usepackage[paper=a4paper,left=45mm,right=15mm,top=25mm,bottom=25mm]{geometry}
+
+%
+% Tiefe des Inhaltsverzeichnisses (Ebene 1-3)
+%
+\setcounter{tocdepth}{3}
+
+%
+% Paket für Zeilenabstand laden
+%
+\usepackage{setspace}
+
+%
+% Zeilenabstand auf 1,5 Zeilen setzen
+%
+\onehalfspacing
+
+%
+% Paket für Tabellen
+%
+\usepackage{array}
+
+%
+% Kopf- und Fusszeilen
+%
+\pagestyle{headings}
+
+%
+% Falls ein PDF erstellt wird, werden die nachfolgenden informationen
+% wie Titel, Autoren, etc. in das PDF eingetragen.
+%
+\ifpdf
+   \usepackage[pdftex]{graphicx}
+	\usepackage{color}
+	\definecolor{LinkColor}{rgb}{0,0,0.5}
+	\usepackage[%
+		pdftitle={Nachhaltige Mitarbeiterbindung mit Anreizsystemen},%
+		pdfauthor={Silvio Wangler, Marcel Weber},%
+		pdfcreator={MiKTeX, LaTeX with hyperref and KOMA-Script},
+		pdfsubject={Masterthesis zum Thema: Nachhaltige Mitarbeiterbindung mit Anreizsystemen},
+		pdfkeywords={Retention Management, Personalwesen, Human Capital, Anreize, Mitarbeiterbindung, Immaterielle Anreize, Masterthesis, Silvio Wangler, Marcel Weber}]{hyperref}
+	
+	\hypersetup{colorlinks=true,%
+		linkcolor=LinkColor,%
+		citecolor=LinkColor,%
+		filecolor=LinkColor,%
+		menucolor=LinkColor,%
+		urlcolor=LinkColor}
+   
+\else
+%
+% ansonsten grafik paket laden
+%
+   \usepackage{graphicx}
+\fi
+
+%
+% Index erstellen
+%
+\makeindex
